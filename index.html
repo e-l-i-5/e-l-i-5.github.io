@@ -26,6 +26,16 @@ h1{font-size:2rem;line-height:1.2;margin:0 0 .5rem}
 .chips li{background:var(--card);border:1px solid var(--bdr);border-radius:999px;padding:.35rem .85rem;font-size:.9rem}
 .card{background:var(--card);border:1px solid var(--bdr);border-radius:12px;padding:1.25rem 1.4rem;margin:0 0 1.5rem}
 .card p{margin:.35rem 0}
+.watch h2{font-size:1.3rem;margin:2.2rem 0 1rem}
+.vid{margin:0 0 1.25rem}
+.vid iframe{display:block;border:0;border-radius:12px;background:var(--bdr)}
+.vid-short iframe{width:min(100%,270px);aspect-ratio:9/16;margin:0 auto}
+.vid-short{text-align:center}
+.vid-full iframe{width:100%;aspect-ratio:16/9}
+.vid-cap{color:var(--mut);font-size:.9rem;margin:.45rem 0 0}
+details.vid{border:1px solid var(--bdr);border-radius:12px;padding:.8rem 1rem;background:var(--card)}
+details.vid summary{cursor:pointer;font-weight:600}
+details.vid iframe{width:100%;aspect-ratio:16/9;margin-top:.8rem}
 a{color:var(--acc)}
 .btn{display:inline-block;background:var(--acc);color:#fff;border-radius:8px;padding:.6rem 1.1rem;text-decoration:none;font-weight:600}
 footer{color:var(--mut);font-size:.85rem;margin-top:2.5rem}
@@ -47,6 +57,23 @@ video itself — so you can read instead of watch, or read <em>and</em> watch.</
 <p>The catalog of <strong>481 videos</strong> is already mapped. Pages are on
 their way.</p>
 </div>
+
+<section class="watch">
+<h2>Watch</h2>
+<div class="vid vid-short">
+<iframe src="https://www.youtube.com/embed/__dx2Q2DtQc" title="What ELI5 Actually Means: How to Explain Anything Simply" loading="lazy" allowfullscreen></iframe>
+<p class="vid-cap">What ELI5 Actually Means: How to Explain Anything Simply 🚀</p>
+</div>
+<div class="vid vid-full">
+<iframe src="https://www.youtube.com/embed/4GdTMCwXQN8" title="The Secret Weapon of Smart Communicators: How ELI5 Changes Everything" loading="lazy" allowfullscreen></iframe>
+<p class="vid-cap">The Secret Weapon of Smart Communicators: How ELI5 Changes Everything</p>
+</div>
+<details class="vid">
+<summary>The cinematic cut</summary>
+<iframe src="https://www.youtube.com/embed/iqfJl0SMENI" title="ELI5: Why True Geniuses Explain Things Like You're Five" loading="lazy" allowfullscreen></iframe>
+<p class="vid-cap">ELI5: Why True Geniuses Explain Things Like You're Five 🚀</p>
+</details>
+</section>
 
 <p><a class="btn" href="https://www.youtube.com/channel/UC7WKNYA4l_NDQjVQEaKJJ3w">Watch on YouTube →</a></p>
 
