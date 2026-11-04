@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TJ0Y7GCCC3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TJ0Y7GCCC3');
+</script>
+<title>How Bitcoin Stops You From Spending the Same Dollar Twice</title>
+<meta name="description" content="Here is a puzzle that stopped digital money for decades: why can&#x27;t you just copy and paste a Bitcoin like any other digital file?">
+<link rel="canonical" href="https://eli5.sok.lv/bitcoin-double-spending-problem/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How Bitcoin Stops You From Spending the Same Dollar Twice">
+<meta property="og:description" content="Here is a puzzle that stopped digital money for decades: why can&#x27;t you just copy and paste a Bitcoin like any other digital file?">
+<meta property="og:url" content="https://eli5.sok.lv/bitcoin-double-spending-problem/">
+<meta property="og:site_name" content="ELI5">
+<meta property="og:image" content="https://i.ytimg.com/vi/3sSfEBibdr8/hqdefault.jpg">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1720" media="(prefers-color-scheme: dark)">
+<style>
+:root{--bg:#f8fafc;--fg:#0f172a;--mut:#64748b;--card:#ffffff;--bdr:#e2e8f0;--acc:#2563eb}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1720;--fg:#e5e9f0;--mut:#8b98a9;--card:#16202c;--bdr:#253041;--acc:#60a5fa}}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--fg)}
+main{max-width:44rem;margin:0 auto;padding:3rem 1.25rem}
+h1{font-size:2rem;line-height:1.2;margin:0 0 .5rem}
+.sub{color:var(--mut);font-size:1.05rem;margin:0 0 2rem}
+.card{background:var(--card);border:1px solid var(--bdr);border-radius:12px;padding:1.25rem 1.4rem;margin:0 0 1.5rem}
+.card h2{font-size:1.3rem;margin:.2rem 0 .8rem}
+.story p{margin:.7rem 0}
+.story .lead{color:var(--mut);font-weight:600;margin:0 0 .9rem}
+.faq h3{font-size:1.05rem;margin:1rem 0 .25rem}
+.faq p{margin:0 0 .4rem}
+ul.short{margin:.3rem 0;padding-left:1.2rem}
+ul.short li{margin:.35rem 0}
+.watch h2{font-size:1.3rem;margin:2.2rem 0 1rem}
+.vid{margin:0 0 1.25rem}
+.vid iframe{display:block;border:0;border-radius:12px;background:var(--bdr)}
+.vid-full iframe{width:100%;aspect-ratio:16/9}
+.vid-short iframe{width:min(100%,270px);aspect-ratio:9/16;margin:0 auto}
+.vid-short{text-align:center}
+.vid-cap{color:var(--mut);font-size:.9rem;margin:.45rem 0 0}
+.short-toggle{margin:14px 0 0}
+.short-toggle summary{font:600 14px/1.4 Arial,sans-serif;color:var(--acc);cursor:pointer}
+a{color:var(--acc)}
+.btn{display:inline-block;background:var(--acc);color:#fff;border-radius:8px;padding:.6rem 1.1rem;text-decoration:none;font-weight:600}
+footer{color:var(--mut);font-size:.85rem;margin-top:2.5rem}
+</style>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Article", "headline": "How Bitcoin Stops You From Spending the Same Dollar Twice", "description": "Here is a puzzle that stopped digital money for decades: why can't you just copy and paste a Bitcoin like any other digital file?", "image": "https://i.ytimg.com/vi/3sSfEBibdr8/hqdefault.jpg", "author": {"@type": "Organization", "name": "KraSer"}, "publisher": {"@type": "Organization", "name": "ELI5"}, "datePublished": "2026-11-04", "mainEntityOfPage": "https://eli5.sok.lv/bitcoin-double-spending-problem/", "about": {"@type": "Thing", "name": "crypto"}}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "VideoObject", "name": "How Bitcoin Stops You From Spending the Same Dollar Twice", "description": "Here is a puzzle that stopped digital money for decades: why can't you just copy and paste a Bitcoin like any other digital file?", "thumbnailUrl": ["https://i.ytimg.com/vi/3sSfEBibdr8/hqdefault.jpg"], "uploadDate": "2026-06-20T00:00:00+00:00", "embedUrl": "https://www.youtube.com/embed/3sSfEBibdr8", "publisher": {"@type": "Organization", "name": "KraSer"}}
+</script>
+
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the double-spending problem?", "acceptedAnswer": {"@type": "Answer", "text": "It is the flaw that made bankless digital money impossible for decades: a digital coin is just information, and information can be copied perfectly. Without a central authority keeping score, the same coin could be pasted and spent again and again, drowning the system in fraud."}}, {"@type": "Question", "name": "Why did digital money need a central bank before Bitcoin?", "acceptedAnswer": {"@type": "Answer", "text": "Because someone had to own the ledger and decide which payment counts. A central bank kept the authoritative record of balances, so a second spend of the same money could be caught. Removing the bank meant nobody was left to judge — until a network of everyone could do the judging instead."}}, {"@type": "Question", "name": "What is the blockchain, in simple terms?", "acceptedAnswer": {"@type": "Answer", "text": "A single shared ledger maintained by a global network of computers, secured by mathematics. Every transfer is broadcast to the network and verified by thousands of independent machines at once, creating a history of spending that no single person can rewrite."}}, {"@type": "Question", "name": "How exactly does a duplicate transaction fail?", "acceptedAnswer": {"@type": "Answer", "text": "The first spend is broadcast, verified and locked into the shared ledger. When the identical coin is sent to a second recipient, the network's computers compare the new attempt against the shared history, see the coin is already recorded as spent, and reject the transfer."}}]}
+</script>
+</head>
+<body>
+<main>
+<h1>How Bitcoin Stops You From Spending the Same Dollar Twice</h1>
+<p class="sub">Crypto &amp; finance, explained like you are five.</p>
+
+<article class="card story">
+<p>Here is a puzzle that stopped digital money for decades: why can't you just copy and paste a Bitcoin like any other digital file? A photo, a song, a document — copying them is effortless. Money should be the easiest copy of all. Yet before Bitcoin, digital money without a central bank seemed impossible, because of one stubborn obstacle called the "double-spending problem."</p>
+<p>The problem is exactly what it sounds like. A digital coin is just information, and information can be duplicated perfectly. So what stops you from spending the same coin twice — paying for coffee at one shop, then pasting that identical coin to pay a friend in the next minute? With no bank in the middle keeping score, two people would each hold a "real" copy of the same money, and the whole system would drown in fraud. Banks had always been the answer: a central authority owns the ledger and says which payment counts. Remove the bank, and nobody seems left to judge.</p>
+<p>Bitcoin's answer was to make everyone the judge. It uses a global network of computers that shares a single, mathematically secured ledger — the blockchain. Every transfer is broadcast to this network and verified by it, so instead of one bank checking your balance, thousands of independent computers check it at the same time.</p>
+<p>Now watch the double-spend die in real time. You broadcast the first transaction: your coin goes to the coffee shop. The network records it in the shared ledger, and that record is mathematically locked in. Moments later, you try the duplicate — the same coin sent to your friend. But the network already holds a verified entry showing where that coin went. The duplicate transfer simply fails: the computers compare it against the shared history, see the money is already spent, and reject the attempt. One coin, one destination, enforced by math and unanimity rather than by a bank's permission slip.</p>
+<p>That is how the blockchain keeps transactions fraud-free — not by trusting anyone, but by trusting everyone at once. The shared ledger turns copying money into announcing money: every spend becomes public, permanent and checkable by the whole network. The copy-paste trick does not fail because someone catches you; it fails because the record of the first spend is already everywhere, and there is no version of the ledger where your coin still exists to spend again.</p>
+</article>
+
+<div class="card">
+<h2>The short version</h2>
+<ul class="short">
+<li>Digital files copy perfectly, which made money without a bank seem impossible: nothing stopped the same coin from being spent twice — the double-spending problem.</li>
+<li>Bitcoin solves it with a shared, mathematically secured ledger (the blockchain) maintained by a global network of computers that verifies every transfer.</li>
+<li>When a duplicate transaction arrives, the network's shared history shows the coin is already spent, so the copy is rejected — keeping transactions fraud-free.</li>
+</ul>
+</div>
+
+<div class="card faq">
+<h2>FAQ</h2>
+<h3>What is the double-spending problem?</h3>
+<p>It is the flaw that made bankless digital money impossible for decades: a digital coin is just information, and information can be copied perfectly. Without a central authority keeping score, the same coin could be pasted and spent again and again, drowning the system in fraud.</p>
+<h3>Why did digital money need a central bank before Bitcoin?</h3>
+<p>Because someone had to own the ledger and decide which payment counts. A central bank kept the authoritative record of balances, so a second spend of the same money could be caught. Removing the bank meant nobody was left to judge — until a network of everyone could do the judging instead.</p>
+<h3>What is the blockchain, in simple terms?</h3>
+<p>A single shared ledger maintained by a global network of computers, secured by mathematics. Every transfer is broadcast to the network and verified by thousands of independent machines at once, creating a history of spending that no single person can rewrite.</p>
+<h3>How exactly does a duplicate transaction fail?</h3>
+<p>The first spend is broadcast, verified and locked into the shared ledger. When the identical coin is sent to a second recipient, the network's computers compare the new attempt against the shared history, see the coin is already recorded as spent, and reject the transfer.</p>
+</div>
+
+<section class="watch">
+<h2>Watch</h2>
+<div class="vid vid-full">
+<iframe src="https://www.youtube.com/embed/3sSfEBibdr8" title="How Bitcoin Stops You From Spending the Same Dollar Twice" loading="lazy" allowfullscreen></iframe>
+<p class="vid-cap">How Bitcoin Stops You From Spending the Same Dollar Twice</p>
+</div>
+
+</section>
+
+<p><a class="btn" href="https://www.youtube.com/channel/UC7WKNYA4l_NDQjVQEaKJJ3w">Watch on YouTube →</a></p>
+
+<footer>ELI5 companion site &middot; <a href="https://eli5.sok.lv/">eli5.sok.lv</a> &middot; read instead of watch</footer>
+</main>
+</body>
+</html>
