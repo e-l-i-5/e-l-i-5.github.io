@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TJ0Y7GCCC3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TJ0Y7GCCC3');
+</script>
+<title>Margin Trading ELI5: How Leverage Works (The $100 Toy Metaphor)</title>
+<meta name="description" content="&quot;Margin trading&quot; and &quot;leverage&quot; sound like Wall Street armor-plated jargon — but strip the suits away and the whole machine runs on a deal a ten-year-old could">
+<link rel="canonical" href="https://eli5.sok.lv/margin-trading-leverage-toy-metaphor/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Margin Trading ELI5: How Leverage Works (The $100 Toy Metaphor)">
+<meta property="og:description" content="&quot;Margin trading&quot; and &quot;leverage&quot; sound like Wall Street armor-plated jargon — but strip the suits away and the whole machine runs on a deal a ten-year-old could">
+<meta property="og:url" content="https://eli5.sok.lv/margin-trading-leverage-toy-metaphor/">
+<meta property="og:site_name" content="ELI5">
+<meta property="og:image" content="https://i.ytimg.com/vi/L_Zvig8IyAg/hqdefault.jpg">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1720" media="(prefers-color-scheme: dark)">
+<style>
+:root{--bg:#f8fafc;--fg:#0f172a;--mut:#64748b;--card:#ffffff;--bdr:#e2e8f0;--acc:#2563eb}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1720;--fg:#e5e9f0;--mut:#8b98a9;--card:#16202c;--bdr:#253041;--acc:#60a5fa}}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--fg)}
+main{max-width:44rem;margin:0 auto;padding:3rem 1.25rem}
+h1{font-size:2rem;line-height:1.2;margin:0 0 .5rem}
+.sub{color:var(--mut);font-size:1.05rem;margin:0 0 2rem}
+.card{background:var(--card);border:1px solid var(--bdr);border-radius:12px;padding:1.25rem 1.4rem;margin:0 0 1.5rem}
+.card h2{font-size:1.3rem;margin:.2rem 0 .8rem}
+.story p{margin:.7rem 0}
+.story .lead{color:var(--mut);font-weight:600;margin:0 0 .9rem}
+.faq h3{font-size:1.05rem;margin:1rem 0 .25rem}
+.faq p{margin:0 0 .4rem}
+ul.short{margin:.3rem 0;padding-left:1.2rem}
+ul.short li{margin:.35rem 0}
+.watch h2{font-size:1.3rem;margin:2.2rem 0 1rem}
+.vid{margin:0 0 1.25rem}
+.vid iframe{display:block;border:0;border-radius:12px;background:var(--bdr)}
+.vid-full iframe{width:100%;aspect-ratio:16/9}
+.vid-short iframe{width:min(100%,270px);aspect-ratio:9/16;margin:0 auto}
+.vid-short{text-align:center}
+.vid-cap{color:var(--mut);font-size:.9rem;margin:.45rem 0 0}
+.short-toggle{margin:14px 0 0}
+.short-toggle summary{font:600 14px/1.4 Arial,sans-serif;color:var(--acc);cursor:pointer}
+a{color:var(--acc)}
+.btn{display:inline-block;background:var(--acc);color:#fff;border-radius:8px;padding:.6rem 1.1rem;text-decoration:none;font-weight:600}
+footer{color:var(--mut);font-size:.85rem;margin-top:2.5rem}
+</style>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Article", "headline": "Margin Trading ELI5: How Leverage Works (The $100 Toy Metaphor)", "description": "\"Margin trading\" and \"leverage\" sound like Wall Street armor-plated jargon — but strip the suits away and the whole machine runs on a deal a ten-year-old could", "image": "https://i.ytimg.com/vi/L_Zvig8IyAg/hqdefault.jpg", "author": {"@type": "Organization", "name": "KraSer"}, "publisher": {"@type": "Organization", "name": "ELI5"}, "datePublished": "2026-05-30", "mainEntityOfPage": "https://eli5.sok.lv/margin-trading-leverage-toy-metaphor/", "about": {"@type": "Thing", "name": "crypto"}}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "VideoObject", "name": "Margin Trading ELI5: How Leverage Works (The $100 Toy Metaphor)", "description": "\"Margin trading\" and \"leverage\" sound like Wall Street armor-plated jargon — but strip the suits away and the whole machine runs on a deal a ten-year-old could", "thumbnailUrl": ["https://i.ytimg.com/vi/L_Zvig8IyAg/hqdefault.jpg"], "uploadDate": "2026-05-30T00:00:00+00:00", "embedUrl": "https://www.youtube.com/embed/L_Zvig8IyAg", "publisher": {"@type": "Organization", "name": "KraSer"}}
+</script>
+
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What exactly is \"margin\" in margin trading?", "acceptedAnswer": {"@type": "Answer", "text": "It is your own money — the slice of the purchase that is genuinely yours, like a kid's $5 of pocket money in a $10 card deal. The rest is borrowed from the broker, which is why the margin acts as the broker's safety net: losses hit your slice first."}}, {"@type": "Question", "name": "Why is leverage called a magnifying glass?", "acceptedAnswer": {"@type": "Answer", "text": "Because it multiplies your results in both directions. With 3x leverage, gains are three times bigger — and so are losses, since you are riding money you borrowed. It enlarges whatever the market does to your position."}}, {"@type": "Question", "name": "What is a margin call and what follows if you ignore it?", "acceptedAnswer": {"@type": "Answer", "text": "A margin call is the broker's urgent demand to deposit more cash when your buffer shrinks below the safe level — your brother's outstretched hand. If you cannot pay, forced liquidation follows: the broker automatically sells the asset to settle the debt, regardless of the current price."}}, {"@type": "Question", "name": "How did the 1929 crash change the rules?", "acceptedAnswer": {"@type": "Answer", "text": "In the 1920s speculators borrowed up to 90% of a stock's price. The 1929 crash turned that leverage into a domino chain — margin calls, forced selling, falling prices — ending in the Great Depression. The Federal Reserve's Regulation T now caps borrowing at 50%, a modern referee built from that lesson."}}]}
+</script>
+</head>
+<body>
+<main>
+<h1>Margin Trading ELI5: How Leverage Works (The $100 Toy Metaphor)</h1>
+<p class="sub">Crypto &amp; finance, explained like you are five.</p>
+
+<article class="card story">
+<p>"Margin trading" and "leverage" sound like Wall Street armor-plated jargon — but strip the suits away and the whole machine runs on a deal a ten-year-old could make. Want a rare $10 trading card and only have $5 of pocket money? You borrow the other $5 from your older brother, and he holds the card as security until you pay him back. Congratulations: you have just executed margin trading, exactly the way adults do it with brokers.</p>
+<p>Every piece of the adult system is already there. Your $5 pocket money is the margin — your own stake, the slice that is genuinely yours. Your brother is the broker, and his price for lending is that he keeps the card if things go wrong. The full $10 card is your leveraged position: buying power twice the size of your actual money. And brokers in the real world do precisely the same — they hold your assets as a safety net while their loan does the heavy lifting.</p>
+<p>Why bother? Because leverage is a magnifying glass held over your results — in both directions. With 3x leverage, a trade that would have turned $100 into $130 turns your real cash into triple the profit, because you were riding three times your own money. The best-case scenario is exactly as advertised: your wins are multiplied.</p>
+<p>Then comes the risk flip, and the metaphor keeps working. If the card's price sags, the loss still comes out of YOUR slice first — your brother's $5 is not negotiable. Your little buffer of pocket money shrinks with every downtick, and if it gets too thin, the broker makes the dreaded margin call: an urgent demand for more cash, right now. Ignore it, and forced liquidation follows — the broker sells the asset out from under you automatically to settle the debt, no matter where the price stands.</p>
+<p>History took the toy version and ran it off a cliff. The late 1800s saw a margin boom, and by the 1920s speculators were playing with toxic ratios — borrowing up to 90% of a stock's price. When the 1929 crash came, the dominoes fell: falling prices, margin calls, forced selling, lower prices — until the Great Depression. That is why today's game has a referee: the Federal Reserve's Regulation T caps borrowed money at 50%, roughly the brother who refuses to lend you more than he can see.</p>
+<p>So the scary vocabulary was never the point. Margin is your pocket-money slice, leverage is the magnifying glass, the margin call is your brother's outstretched hand — and Regulation T is the household rule written after the whole neighborhood went broke.</p>
+</article>
+
+<div class="card">
+<h2>The short version</h2>
+<ul class="short">
+<li>Margin trading is the toy deal scaled up: your pocket money (the margin) plus a broker's loan buys a position bigger than you own, and the broker holds the asset as a safety net — exactly a brother holding a trading card until he is repaid.</li>
+<li>Leverage magnifies both directions: 3x leverage can triple your profit, but losses also come out of your slice first — a shrinking buffer triggers the margin call, and ignoring it means forced liquidation: the broker sells the asset automatically to settle the debt.</li>
+<li>The 1920s ran on ~90% borrowed money until the 1929 crash and the Great Depression; today the Federal Reserve's Regulation T caps debt at 50% — the referee invented after the disaster.</li>
+</ul>
+</div>
+
+<div class="card faq">
+<h2>FAQ</h2>
+<h3>What exactly is "margin" in margin trading?</h3>
+<p>It is your own money — the slice of the purchase that is genuinely yours, like a kid's $5 of pocket money in a $10 card deal. The rest is borrowed from the broker, which is why the margin acts as the broker's safety net: losses hit your slice first.</p>
+<h3>Why is leverage called a magnifying glass?</h3>
+<p>Because it multiplies your results in both directions. With 3x leverage, gains are three times bigger — and so are losses, since you are riding money you borrowed. It enlarges whatever the market does to your position.</p>
+<h3>What is a margin call and what follows if you ignore it?</h3>
+<p>A margin call is the broker's urgent demand to deposit more cash when your buffer shrinks below the safe level — your brother's outstretched hand. If you cannot pay, forced liquidation follows: the broker automatically sells the asset to settle the debt, regardless of the current price.</p>
+<h3>How did the 1929 crash change the rules?</h3>
+<p>In the 1920s speculators borrowed up to 90% of a stock's price. The 1929 crash turned that leverage into a domino chain — margin calls, forced selling, falling prices — ending in the Great Depression. The Federal Reserve's Regulation T now caps borrowing at 50%, a modern referee built from that lesson.</p>
+</div>
+
+<section class="watch">
+<h2>Watch</h2>
+<div class="vid vid-full">
+<iframe src="https://www.youtube.com/embed/L_Zvig8IyAg" title="Margin Trading ELI5: How Leverage Works (The $100 Toy Metaphor)" loading="lazy" allowfullscreen></iframe>
+<p class="vid-cap">Margin Trading ELI5: How Leverage Works (The $100 Toy Metaphor)</p>
+</div>
+
+</section>
+
+<p><a class="btn" href="https://www.youtube.com/channel/UC7WKNYA4l_NDQjVQEaKJJ3w">Watch on YouTube →</a></p>
+
+<footer>ELI5 companion site &middot; <a href="https://eli5.sok.lv/">eli5.sok.lv</a> &middot; read instead of watch</footer>
+</main>
+</body>
+</html>
