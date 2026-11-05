@@ -1195,7 +1195,19 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://eli5.sok.lv/third-commandment-carry-name/</loc>
+    <
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://eli5.sok.lv/blockchain-oracle-blind-contract/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://eli5.sok.lv/librechat-ai-clubhouse-rooms/</loc>
     <lastmod>2026-11-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
