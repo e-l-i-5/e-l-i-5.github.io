@@ -21,10 +21,10 @@
 <meta property="og:url" content="https://eli5.sok.lv/">
 <meta property="og:site_name" content="ELI5">
 <meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#f4ecd8" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#1a1622" media="(prefers-color-scheme: dark)">
 <style>
-:root{--bg:#f8fafc;--fg:#0f172a;--mut:#64748b;--card:#ffffff;--bdr:#e2e8f0;--acc:#2563eb}
+:root{--bg:#f4ecd8;--fg:#4b3d28;--mut:#8a7a5f;--card:#ede1c6;--bdr:#dccfae;--acc:#a05a2c}
 @media(prefers-color-scheme:dark){:root{--bg:#1a1622;--fg:#ded7cd;--mut:#a0948a;--card:#241e2e;--bdr:#3a3244;--acc:#e8a54b} body{background-image:radial-gradient(760px 260px at 22% -70px,rgba(232,165,75,.11),transparent 72%),radial-gradient(560px 220px at 96% -50px,rgba(217,127,176,.08),transparent 72%)} .card{border-color:rgba(232,165,75,.16)}}
 *{box-sizing:border-box}
 body{margin:0;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--fg)}
@@ -50,10 +50,18 @@ details.vid iframe{width:100%;aspect-ratio:16/9;margin-top:.8rem}
 a{color:var(--acc)}
 .btn{display:inline-block;background:var(--acc);color:#fff;border-radius:8px;padding:.6rem 1.1rem;text-decoration:none;font-weight:600}
 footer{color:var(--mut);font-size:.85rem;margin-top:2.5rem}
+.yt-facade{position:relative;background:#000 center/cover no-repeat;cursor:pointer}
+details.vid .yt-facade{margin-top:.8rem}
+.vid .yt-facade{display:block;border:0;border-radius:12px;width:100%;aspect-ratio:16/9}
+.vid-short .yt-facade{width:min(100%,270px);aspect-ratio:9/16;margin:0 auto}
+.yt-facade:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.yt-play{position:absolute;inset:0;margin:auto;width:66px;height:46px;border-radius:12px;background:rgba(23,18,30,.82);display:flex;align-items:center;justify-content:center}
+.yt-play:before{content:"";border-style:solid;border-width:9px 0 9px 16px;border-color:transparent transparent transparent #fff;margin-left:3px}
 </style>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "VideoObject", "name": "The Secret Weapon of Smart Communicators: How ELI5 Changes Everything", "description": "Every expert carries a curse, and it is called the curse of knowledge.", "thumbnailUrl": ["https://i.ytimg.com/vi/4GdTMCwXQN8/hqdefault.jpg"], "uploadDate": "2026-10-16T00:00:00+00:00", "duration": "PT8M20S", "contentUrl": "https://www.youtube.com/watch?v=4GdTMCwXQN8", "embedUrl": "https://www.youtube.com/embed/4GdTMCwXQN8", "publisher": {"@type": "Organization", "name": "KraSer"}}
 </script>
+<link rel="preconnect" href="https://i.ytimg.com">
 </head>
 <body>
 <main>
@@ -75,19 +83,19 @@ their way.</p>
 <section class="watch">
 <h2>Watch</h2>
 <div class="vid vid-full">
-<iframe src="https://www.youtube.com/embed/4GdTMCwXQN8" title="The Secret Weapon of Smart Communicators: How ELI5 Changes Everything" loading="lazy" allowfullscreen></iframe>
+<div class="yt-facade" data-vid="4GdTMCwXQN8" data-title="The Secret Weapon of Smart Communicators: How ELI5 Changes Everything" role="button" tabindex="0" aria-label="Play video: The Secret Weapon of Smart Communicators: How ELI5 Changes Everything" style="background-image:url(https://i.ytimg.com/vi/4GdTMCwXQN8/hqdefault.jpg)"><span class="yt-play" aria-hidden="true"></span></div>
 <p class="vid-cap">The Secret Weapon of Smart Communicators: How ELI5 Changes Everything</p>
 </div>
 <details class="short-toggle">
 <summary>In a hurry? Watch the quick version — What ELI5 Actually Means: How to Explain Anything Simply</summary>
 <div class="vid vid-short">
-<iframe src="https://www.youtube.com/embed/__dx2Q2DtQc" title="What ELI5 Actually Means: How to Explain Anything Simply" loading="lazy" allowfullscreen></iframe>
+<div class="yt-facade" data-vid="__dx2Q2DtQc" data-title="What ELI5 Actually Means: How to Explain Anything Simply" role="button" tabindex="0" aria-label="Play video: What ELI5 Actually Means: How to Explain Anything Simply" style="background-image:url(https://i.ytimg.com/vi/__dx2Q2DtQc/hqdefault.jpg)"><span class="yt-play" aria-hidden="true"></span></div>
 <p class="vid-cap">What ELI5 Actually Means: How to Explain Anything Simply 🚀</p>
 </div>
 </details>
 <details class="vid">
 <summary>The cinematic cut</summary>
-<iframe src="https://www.youtube.com/embed/iqfJl0SMENI" title="ELI5: Why True Geniuses Explain Things Like You're Five" loading="lazy" allowfullscreen></iframe>
+<div class="yt-facade" data-vid="iqfJl0SMENI" data-title="ELI5: Why True Geniuses Explain Things Like You're Five" role="button" tabindex="0" aria-label="Play video: ELI5: Why True Geniuses Explain Things Like You're Five" style="background-image:url(https://i.ytimg.com/vi/iqfJl0SMENI/hqdefault.jpg)"><span class="yt-play" aria-hidden="true"></span></div>
 <p class="vid-cap">ELI5: Why True Geniuses Explain Things Like You're Five 🚀</p>
 </details>
 </section>
@@ -96,5 +104,6 @@ their way.</p>
 
 <footer>ELI5 companion site &middot; eli5.sok.lv &middot; under construction</footer>
 </main>
+<script>(function(){function arm(f){var v=f.getAttribute("data-vid"),t=f.getAttribute("data-title")||"";var i=document.createElement("iframe");i.src="https://www.youtube-nocookie.com/embed/"+v+"?autoplay=1";i.title=t;i.allow="autoplay; encrypted-media; picture-in-picture";i.allowFullscreen=true;f.replaceWith(i);}document.addEventListener("click",function(e){var f=e.target&&e.target.closest?e.target.closest(".yt-facade"):null;if(f)arm(f);});document.addEventListener("keydown",function(e){if(e.key!=="Enter"&&e.key!==" ")return;var f=e.target&&e.target.closest?e.target.closest(".yt-facade"):null;if(f){e.preventDefault();arm(f);}});})();</script>
 </body>
 </html>

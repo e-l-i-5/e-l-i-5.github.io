@@ -24,6 +24,7 @@
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#f4ecd8" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#1a1622" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://i.ytimg.com">
 <style>
 :root{--bg:#f4ecd8;--fg:#4b3d28;--mut:#8a7a5f;--card:#ede1c6;--bdr:#dccfae;--acc:#a05a2c}
 @media(prefers-color-scheme:dark){:root{--bg:#1a1622;--fg:#ded7cd;--mut:#a0948a;--card:#241e2e;--bdr:#3a3244;--acc:#e8a54b} body{background-image:radial-gradient(760px 260px at 22% -70px,rgba(232,165,75,.11),transparent 72%),radial-gradient(560px 220px at 96% -50px,rgba(217,127,176,.08),transparent 72%)} .card{border-color:rgba(232,165,75,.16)}}
@@ -47,6 +48,12 @@ ul.short li{margin:.35rem 0}
 .vid-short iframe{width:min(100%,270px);aspect-ratio:9/16;margin:0 auto}
 .vid-short{text-align:center}
 .vid-cap{color:var(--mut);font-size:.9rem;margin:.45rem 0 0}
+.yt-facade{position:relative;background:#000 center/cover no-repeat;cursor:pointer}
+.vid .yt-facade{display:block;border:0;border-radius:12px;width:100%;aspect-ratio:16/9}
+.vid-short .yt-facade{width:min(100%,270px);aspect-ratio:9/16;margin:0 auto}
+.yt-facade:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.yt-play{position:absolute;inset:0;margin:auto;width:66px;height:46px;border-radius:12px;background:rgba(23,18,30,.82);display:flex;align-items:center;justify-content:center}
+.yt-play:before{content:"";border-style:solid;border-width:9px 0 9px 16px;border-color:transparent transparent transparent #fff;margin-left:3px}
 .short-toggle{margin:14px 0 0}
 .short-toggle summary{font:600 14px/1.4 Arial,sans-serif;color:var(--acc);cursor:pointer}
 a{color:var(--acc)}
@@ -102,7 +109,7 @@ footer{color:var(--mut);font-size:.85rem;margin-top:2.5rem}
 <section class="watch">
 <h2>Watch</h2>
 <div class="vid vid-full">
-<iframe src="https://www.youtube.com/embed/N0mBc8JPqGs" title="The 60-Year Lock: Why You Missed Half of Your Chinese Zodiac!" loading="lazy" allowfullscreen></iframe>
+<div class="yt-facade" data-vid="N0mBc8JPqGs" data-title="The 60-Year Lock: Why You Missed Half of Your Chinese Zodiac!" role="button" tabindex="0" aria-label="Play video: The 60-Year Lock: Why You Missed Half of Your Chinese Zodiac!" style="background-image:url(https://i.ytimg.com/vi/N0mBc8JPqGs/hqdefault.jpg)"><span class="yt-play" aria-hidden="true"></span></div>
 <p class="vid-cap">The 60-Year Lock: Why You Missed Half of Your Chinese Zodiac!</p>
 </div>
 
@@ -112,5 +119,6 @@ footer{color:var(--mut);font-size:.85rem;margin-top:2.5rem}
 
 <footer>ELI5 companion site &middot; <a href="https://eli5.sok.lv/">eli5.sok.lv</a> &middot; read instead of watch</footer>
 </main>
+<script>(function(){function arm(f){var v=f.getAttribute("data-vid"),t=f.getAttribute("data-title")||"";var i=document.createElement("iframe");i.src="https://www.youtube-nocookie.com/embed/"+v+"?autoplay=1";i.title=t;i.allow="autoplay; encrypted-media; picture-in-picture";i.allowFullscreen=true;f.replaceWith(i);}document.addEventListener("click",function(e){var f=e.target&&e.target.closest?e.target.closest(".yt-facade"):null;if(f)arm(f);});document.addEventListener("keydown",function(e){if(e.key!=="Enter"&&e.key!==" ")return;var f=e.target&&e.target.closest?e.target.closest(".yt-facade"):null;if(f){e.preventDefault();arm(f);}});})();</script>
 </body>
 </html>

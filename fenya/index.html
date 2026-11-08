@@ -22,11 +22,11 @@
 <meta property="og:site_name" content="ELI5">
 <meta property="og:image" content="https://i.ytimg.com/vi/AEA9_QhWBPw/hqdefault.jpg">
 <meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#f4ecd8" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#1a1622" media="(prefers-color-scheme: dark)">
 <style>
-:root{--bg:#f8fafc;--fg:#0f172a;--mut:#64748b;--card:#ffffff;--bdr:#e2e8f0;--acc:#2563eb}
-@media(prefers-color-scheme:dark){:root{--bg:#0f1720;--fg:#e5e9f0;--mut:#8b98a9;--card:#16202c;--bdr:#253041;--acc:#60a5fa}}
+:root{--bg:#f4ecd8;--fg:#4b3d28;--mut:#8a7a5f;--card:#ede1c6;--bdr:#dccfae;--acc:#a05a2c}
+@media(prefers-color-scheme:dark){:root{--bg:#1a1622;--fg:#ded7cd;--mut:#a0948a;--card:#241e2e;--bdr:#3a3244;--acc:#e8a54b}}
 *{box-sizing:border-box}
 body{margin:0;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--fg)}
 main{max-width:44rem;margin:0 auto;padding:3rem 1.25rem}
@@ -52,6 +52,12 @@ ul.short li{margin:.35rem 0}
 a{color:var(--acc)}
 .btn{display:inline-block;background:var(--acc);color:#fff;border-radius:8px;padding:.6rem 1.1rem;text-decoration:none;font-weight:600}
 footer{color:var(--mut);font-size:.85rem;margin-top:2.5rem}
+.yt-facade{position:relative;background:#000 center/cover no-repeat;cursor:pointer}
+.vid .yt-facade{display:block;border:0;border-radius:12px;width:100%;aspect-ratio:16/9}
+.vid-short .yt-facade{width:min(100%,270px);aspect-ratio:9/16;margin:0 auto}
+.yt-facade:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.yt-play{position:absolute;inset:0;margin:auto;width:66px;height:46px;border-radius:12px;background:rgba(23,18,30,.82);display:flex;align-items:center;justify-content:center}
+.yt-play:before{content:"";border-style:solid;border-width:9px 0 9px 16px;border-color:transparent transparent transparent #fff;margin-left:3px}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Article","headline":"The Secret Russian Language That Outsmarted Empires (Fenya Explained)","description":"Fenya is the whisper-language that fooled empires: born among medieval peddlers, hardened in the Gulag, armed the 1990s mob — and still refuses to die.","image":"https://i.ytimg.com/vi/AEA9_QhWBPw/hqdefault.jpg","author":{"@type":"Organization","name":"KraSer"},"publisher":{"@type":"Organization","name":"ELI5"},"datePublished":"2026-11-02","mainEntityOfPage":"https://eli5.sok.lv/fenya/","about":{"@type":"Thing","name":"Fenya (Russian slang)"}}
@@ -62,6 +68,7 @@ footer{color:var(--mut);font-size:.85rem;margin-top:2.5rem}
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is fenya?","acceptedAnswer":{"@type":"Answer","text":"Fenya is the legendary secret slang of the Russian criminal world — a crypto-language built so outsiders hear words but never meaning."}},{"@type":"Question","name":"Where did fenya come from?","acceptedAnswer":{"@type":"Answer","text":"Most traces lead to medieval traveling peddlers who hid profit margins in their sales talk; the code later spread through prisons and the Gulag."}},{"@type":"Question","name":"Why can't fenya be banned?","acceptedAnswer":{"@type":"Answer","text":"A language lives in whispers, songs and everyday habits. It was officially banned in 2016, yet its words still circulate — you can outlaw a dictionary, not a tongue."}},{"@type":"Question","name":"Did any fenya words reach normal speech?","acceptedAnswer":{"@type":"Answer","text":"Yes — several leaked into everyday Russian and are used today by people who never heard of fenya."}}]}
 </script>
+<link rel="preconnect" href="https://i.ytimg.com">
 </head>
 <body>
 <main>
@@ -128,13 +135,13 @@ never heard of fenya.</p>
 <section class="watch">
 <h2>Watch</h2>
 <div class="vid vid-full">
-<iframe src="https://www.youtube.com/embed/AEA9_QhWBPw" title="The Secret Russian Language That Outsmarted Empires (Fenya Explained)" loading="lazy" allowfullscreen></iframe>
+<div class="yt-facade" data-vid="AEA9_QhWBPw" data-title="The Secret Russian Language That Outsmarted Empires (Fenya Explained)" role="button" tabindex="0" aria-label="Play video: The Secret Russian Language That Outsmarted Empires (Fenya Explained)" style="background-image:url(https://i.ytimg.com/vi/AEA9_QhWBPw/hqdefault.jpg)"><span class="yt-play" aria-hidden="true"></span></div>
 <p class="vid-cap">The Secret Russian Language That Outsmarted Empires (Fenya Explained)</p>
 </div>
 <details class="short-toggle">
 <summary>In a hurry? Watch the quick version — How Medieval Merchants Spoke in Code Right in Front of You! 🤫</summary>
 <div class="vid vid-short">
-<iframe src="https://www.youtube.com/embed/O1PzyOK9OD0" title="How Medieval Merchants Spoke in Code Right in Front of You! 🤫" loading="lazy" allowfullscreen></iframe>
+<div class="yt-facade" data-vid="O1PzyOK9OD0" data-title="How Medieval Merchants Spoke in Code Right in Front of You! 🤫" role="button" tabindex="0" aria-label="Play video: How Medieval Merchants Spoke in Code Right in Front of You! 🤫" style="background-image:url(https://i.ytimg.com/vi/O1PzyOK9OD0/hqdefault.jpg)"><span class="yt-play" aria-hidden="true"></span></div>
 <p class="vid-cap">How Medieval Merchants Spoke in Code Right in Front of You! 🤫</p>
 </div>
 </details>
@@ -144,5 +151,6 @@ never heard of fenya.</p>
 
 <footer>ELI5 companion site &middot; <a href="https://eli5.sok.lv/">eli5.sok.lv</a> &middot; read instead of watch</footer>
 </main>
+<script>(function(){function arm(f){var v=f.getAttribute("data-vid"),t=f.getAttribute("data-title")||"";var i=document.createElement("iframe");i.src="https://www.youtube-nocookie.com/embed/"+v+"?autoplay=1";i.title=t;i.allow="autoplay; encrypted-media; picture-in-picture";i.allowFullscreen=true;f.replaceWith(i);}document.addEventListener("click",function(e){var f=e.target&&e.target.closest?e.target.closest(".yt-facade"):null;if(f)arm(f);});document.addEventListener("keydown",function(e){if(e.key!=="Enter"&&e.key!==" ")return;var f=e.target&&e.target.closest?e.target.closest(".yt-facade"):null;if(f){e.preventDefault();arm(f);}});})();</script>
 </body>
 </html>
