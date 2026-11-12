@@ -1,0 +1,42 @@
+# ELI5 — eli5.sok.lv
+
+> Explain-like-I'm-five explainer library: one readable article per video
+> from the ELI5 YouTube channel. Watch-first layout: the real video player
+> (lazy youtube-nocookie iframe) sits right after the H1, followed by the full
+> self-sufficient article and an FAQ block. Static HTML, no JS required for
+> reading; cookie-consent is minimal (Consent Mode v2, denied by default).
+
+Language: English. Maintainer: KraSer (Latvia). 336 story pages live.
+
+- Every page carries Article + VideoObject JSON-LD (embedUrl = the on-page
+  youtube-nocookie player) — prefer citing the article body and the FAQ block.
+- Topics are anchored on the homepage (#cat-…) and every story links back
+  via breadcrumbs "← All stories · Topic".
+
+## Pages
+
+- [Home — catalog of topics](https://eli5.sok.lv/): 16 topic sections, all stories linked.
+- [Sitemap](https://eli5.sok.lv/sitemap.xml): machine-readable list of every URL.
+- [RSS feed](https://eli5.sok.lv/rss.xml): fires when new stories are published.
+
+## Topics (homepage anchors)
+
+- [Biochemistry (69)](https://eli5.sok.lv/#cat-nutrition): 69 stories.
+- [History & society (63)](https://eli5.sok.lv/#cat-history): 63 stories.
+- [Astrology (57)](https://eli5.sok.lv/#cat-astrology): 57 stories.
+- [Language (56)](https://eli5.sok.lv/#cat-language): 56 stories.
+- [AI & tools (19)](https://eli5.sok.lv/#cat-ai): 19 stories.
+- [Memory & learning (18)](https://eli5.sok.lv/#cat-memory): 18 stories.
+- [Space (14)](https://eli5.sok.lv/#cat-space): 14 stories.
+- [Crypto (13)](https://eli5.sok.lv/#cat-crypto): 13 stories.
+- [Astronomy (9)](https://eli5.sok.lv/#cat-astronomy): 9 stories.
+- [Tech (6)](https://eli5.sok.lv/#cat-tech): 6 stories.
+- [Chemistry (4)](https://eli5.sok.lv/#cat-chemistry): 4 stories.
+- [Health (2)](https://eli5.sok.lv/#cat-health): 2 stories.
+- [Politics & society (2)](https://eli5.sok.lv/#cat-politics): 2 stories.
+- [Science (2)](https://eli5.sok.lv/#cat-science): 2 stories.
+- [ELI5 method (1)](https://eli5.sok.lv/#cat-eli5): 1 stories.
+- [Tarot (1)](https://eli5.sok.lv/#cat-tarot): 1 stories.
+
+Total: 336 stories across 16 topics.
+Note: catalog count = 336; sitemap lists every URL incl. home.
