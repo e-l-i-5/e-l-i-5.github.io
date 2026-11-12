@@ -3,6 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Consent Mode v2 (2026-11-12, kraser: cookie compliance, minimum footprint):
+     everything denied by default — no analytics cookies before an explicit opt-in. -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {analytics_storage: 'denied', ad_storage: 'denied',
+    ad_user_data: 'denied', ad_personalization: 'denied', wait_for_update: 500});
+</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TJ0Y7GCCC3"></script>
 <script>
@@ -58,6 +66,10 @@ ul.short li{margin:.35rem 0}
 .short-toggle summary{font:600 14px/1.4 Arial,sans-serif;color:var(--acc);cursor:pointer}
 a{color:var(--acc);text-decoration:underline dotted;text-underline-offset:4px}
 .btn{display:inline-block;background:var(--acc);color:#fff;border-radius:8px;padding:.6rem 1.1rem;text-decoration:none;font-weight:600}
+.crumbs{font-size:.9rem;color:var(--mut);margin:0 0 1.1rem}
+#ck{position:fixed;left:10px;bottom:10px;z-index:9;background:var(--card);border:1px solid var(--bdr);border-radius:999px;padding:.4rem .8rem;font-size:13px;line-height:1.45;max-width:min(92vw,470px);box-shadow:0 2px 10px rgba(0,0,0,.12)}
+#ck button{border:0;border-radius:999px;padding:.25rem .65rem;font:600 12px/1.3 inherit;background:var(--acc);color:#fff;cursor:pointer;margin-left:.3rem}
+#ck #ck-no{background:transparent;color:var(--acc);border:1px solid var(--bdr)}
 footer{color:var(--mut);font-size:.85rem;margin-top:2.5rem}
 </style>
 <script type="application/ld+json">
@@ -73,6 +85,7 @@ footer{color:var(--mut);font-size:.85rem;margin-top:2.5rem}
 </head>
 <body>
 <main>
+<nav class="crumbs"><a href="https://eli5.sok.lv/">&#8592; All stories</a><span aria-hidden="true"> &middot; </span><a href="https://eli5.sok.lv/#cat-language">Language</a></nav>
 <h1>How Your Body Turns Invisible Air Into Spoken Words</h1>
 <p class="sub">Linguistics, explained like you are five.</p>
 
@@ -119,6 +132,20 @@ footer{color:var(--mut);font-size:.85rem;margin-top:2.5rem}
 
 <footer>ELI5 companion site &middot; <a href="https://eli5.sok.lv/">eli5.sok.lv</a> &middot; read instead of watch</footer>
 </main>
+<div id="ck" hidden role="region" aria-label="Cookie notice">Anonymous traffic analytics. <button id="ck-ok" type="button">OK</button><button id="ck-no" type="button">Essential only</button></div>
+<script>
+(function(){
+  var box = document.getElementById('ck');
+  function save(v){ try{ localStorage.setItem('ck', v); }catch(e){ } box.hidden = true; }
+  var s = null; try{ s = localStorage.getItem('ck'); }catch(e){ }
+  if (s === 'ok') { gtag('consent', 'update', {analytics_storage: 'granted'}); }
+  if (box) {
+    box.hidden = !!s;
+    document.getElementById('ck-ok').onclick = function(){ save('ok'); gtag('consent', 'update', {analytics_storage: 'granted'}); };
+    document.getElementById('ck-no').onclick = function(){ save('no'); };
+  }
+})();
+</script>
 <script>(function(){function arm(f){var v=f.getAttribute("data-vid"),t=f.getAttribute("data-title")||"";var i=document.createElement("iframe");i.src="https://www.youtube-nocookie.com/embed/"+v+"?autoplay=1";i.title=t;i.allow="autoplay; encrypted-media; picture-in-picture";i.allowFullscreen=true;f.replaceWith(i);}document.addEventListener("click",function(e){var f=e.target&&e.target.closest?e.target.closest(".yt-facade"):null;if(f)arm(f);});document.addEventListener("keydown",function(e){if(e.key!=="Enter"&&e.key!==" ")return;var f=e.target&&e.target.closest?e.target.closest(".yt-facade"):null;if(f){e.preventDefault();arm(f);}});})();</script>
 </body>
 </html>
